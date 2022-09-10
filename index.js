@@ -1,7 +1,12 @@
 const express = require('express')
 const app = express()
 app.get('/', function(req,res){
-    res.send("Hola mundo")
+    console.log(req)
+    res.send(req)
+})
+
+app.post('/',(req,res)=>{
+    res.send("Hola mundo 2")
 })
 
 
